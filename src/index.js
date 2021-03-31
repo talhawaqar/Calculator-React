@@ -3,5 +3,5 @@ import ReactDOM from 'react-dom';
 
 ReactDOM.render(
   <div>calculator</div>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
