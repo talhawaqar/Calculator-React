@@ -12,8 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-        with:      "react-app/jest"
-
+        with:
           node-version: "12.x"
       - name: Setup ESLint
         run: |
