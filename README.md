@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
-[Demo](http://localhost:3000](http://localhost:3000)
+[Live Demo Link](https://react-calculator-t7.herokuapp.com/)
 
 ## Available Scripts
 
