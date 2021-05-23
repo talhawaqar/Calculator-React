@@ -1,11 +1,16 @@
 import React from 'react';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
+import calculate from '../logic/calculate';
 
-const App = () => (
-  <>
-    <Display />
-    <ButtonPanel />
-  </>
-);
+const App = () => {
+  calculate('+', { total: null, next: null, operation: null });
+  return (
+    <>
+      <Display />
+      <ButtonPanel />
+    </>
+  );
+};
+
 export default App;
