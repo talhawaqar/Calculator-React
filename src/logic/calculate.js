@@ -18,7 +18,7 @@ const calculate = (buttonName, stateData = { total: null, next: null, operation:
         tempData.next = operate(tempData.next, -1, 'X');
         break;
       case '%':
-        tempData.next = operate(tempData.next, -1, '÷');
+        tempData.next = operate(tempData.next, 100, '÷');
         break;
       case '.':
         if (tempData.next.indexOf('.') < 0) {

@@ -5,14 +5,14 @@ const Display = (props) => {
   const { result } = props;
 
   return (
-    <div style={{
-      width: '280px', boxSizing: 'border-box', fontSize: '70px', border: 'solid 1px black', display: 'flex', justifyContent: 'flex-end', padding: '0 5px',
-    }}
-    >
-      <span>
-        {result}
-      </span>
-    </div>
+    <input
+      type="text"
+      value={result}
+      style={{
+        boxSizing: 'border-box', width: '280px', backgroundColor: 'white', fontSize: '40px', textAlign: 'right', padding: '3px 0',
+      }}
+      readOnly
+    />
   );
 };
 
