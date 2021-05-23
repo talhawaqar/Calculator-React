@@ -2,7 +2,6 @@ import operate from './operate';
 
 const calculate = (buttonName, stateData = { total: null, next: null, operation: null }) => {
   const tempData = { ...stateData };
-  console.log(tempData);
   if (buttonName.match(/\d/)) {
     if (tempData.next == null || (tempData.next[0] === '0' && tempData.next.length === 1)) {
       tempData.next = buttonName;
@@ -57,6 +56,8 @@ const calculate = (buttonName, stateData = { total: null, next: null, operation:
         case '=':
           break;
         case '.':
+          tempData.total = null;
+          tempData.next = '0.';
           break;
         default:
           tempData.operation = buttonName;
