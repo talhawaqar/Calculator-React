@@ -6,7 +6,7 @@ This project is a simple calculator build using react components.
 
 ![](/public/screenshot.png)
 
-##  🔧 Built with
+## 🔧 Built with
 
 - React
 - Node Package Manager(npm)
@@ -16,31 +16,29 @@ This project is a simple calculator build using react components.
 [Live Demo Link](https://react-calculator-t7.herokuapp.com/)
 
 ## Get started
+
 ### Prerequisites
-1. Node Package Mangaer(npm) 
+
+1. Node Package Mangaer(npm)
 
 1. Node
 
 ### Steps to follow
 
 1. Clone the repository to your local machine by running `git clone git@github.com:talhawaqar/Calculator-React.git` in your terminal
-
 2. On your local machine, navigate to the game folder using `cd Calculator-app` in your terminal
-
 3. Run `npm install` to install all the necessary dependencies.
-
 4. Run `npm run build`
-
 5. Run `npm start` to start the application on a local server
 
-## ✒️  Authors
+## ✒️ Authors
 
 👤 **Muhammad Talha Waqar**
 
-- Github: [@RNtaate](https://github.com/talhawaqar)
-- Twitter: [@RNtaate](https://twitter.com/RNtaate)
-- Linkedin: [roy-ntaate](https://linkedin.com/in/roy-ntaate)
-
+- Github: [@TalhaWaqar](https://github.com/talhawaqar)
+- Linkedin: [@TalhaWaqar](https://www.linkedin.com/in/talhawaqar/)
+- E-mail: <a href="mailto:talhawaqar007@gmail.com?subject=Hello Talha!">Email</a>
+- Twitter: [@TalhaWaqar](https://twitter.com/MuhammadTalhaW4)
 
 ## Available Scripts
 
@@ -74,3 +72,14 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Show your support
+
+Give ⭐ Star me on GitHub — it helps!
+
+## Acknowledgements
+
+[Microverse](https:www.microverse.org)
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
