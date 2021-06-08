@@ -1,16 +1,23 @@
 import React from 'react';
-import ButtonPanel from './ButtonPanel';
-import Display from './Display';
-import calculate from '../logic/calculate';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigation from './Navigation';
+import Home from './Home';
+import Calculator from './Calculator';
+import Quote from './Quote';
 
-const App = () => {
-  calculate('+', { total: null, next: null, operation: null });
-  return (
-    <>
-      <Display />
-      <ButtonPanel />
-    </>
-  );
-};
+const App = () => (
+  <>
+    <BrowserRouter>
+      <Navigation />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/calculator" component={Calculator} />
+        <Route path="/quote" component={Quote} />
+        <Route path="/" component={Quote} />
+      </Switch>
+    </BrowserRouter>
+  </>
+);
 
 export default App;
