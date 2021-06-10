@@ -17,7 +17,6 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/calculator" render={() => (<div style={calcStyle}><Calculator /></div>)} />
-        {/* <Route path="/calculator" component={Calculator} /> */}
         <Route path="/quote" component={Quote} />
         <Route path="/" component={Quote} />
       </Switch>
