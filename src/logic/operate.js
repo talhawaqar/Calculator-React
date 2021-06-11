@@ -12,7 +12,7 @@ const operate = (numberOne, numberTwo, operation) => {
     '÷': (number1, number2) => number1.div(number2),
   };
   result = operations[operation](number1, number2);
-  return result;
+  return result.toString();
 };
 
 export default operate;
