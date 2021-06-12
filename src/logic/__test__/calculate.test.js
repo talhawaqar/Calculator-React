@@ -100,3 +100,103 @@ test('tests the % operator on object it shuild mutate the object.next and divide
   expect(newData.next === '0.05').toBeTruthy();
   expect(newData.next).toBe('0.05');
 });
+
+test('add two numbers and mutate the object accordingly', () => {
+  myData.next = '5';
+  myData.operation = '+';
+  myData.total = '5';
+
+  const newData = calculate('=', myData);
+
+  expect(newData.total !== '10').toBeFalsy();
+  expect(newData.total === '10').toBeTruthy();
+  expect(newData.total).toBe('10');
+  
+  expect(newData.next !== null).toBeFalsy();
+  expect(newData.next === null).toBeTruthy();
+  expect(newData.next).toBe(null);
+});
+
+test('subtract two numbers and mutate the object accordingly', () => {
+  myData.next = '5';
+  myData.operation = '-';
+  myData.total = '15';
+
+  const newData = calculate('=', myData);
+
+  expect(newData.total !== '10').toBeFalsy();
+  expect(newData.total === '10').toBeTruthy();
+  expect(newData.total).toBe('10');
+  
+  expect(newData.next !== null).toBeFalsy();
+  expect(newData.next === null).toBeTruthy();
+  expect(newData.next).toBe(null);
+});
+
+test('Multiply two numbers and mutate the object accordingly', () => {
+  myData.next = '2';
+  myData.operation = 'X';
+  myData.total = '5';
+
+  const newData = calculate('=', myData);
+
+  expect(newData.total !== '10').toBeFalsy();
+  expect(newData.total === '10').toBeTruthy();
+  expect(newData.total).toBe('10');
+  
+  expect(newData.next !== null).toBeFalsy();
+  expect(newData.next === null).toBeTruthy();
+  expect(newData.next).toBe(null);
+});
+
+test('Divide two numbers and mutate the object accordingly', () => {
+  myData.next = '2';
+  myData.operation = '÷';
+  myData.total = '20';
+
+  const newData = calculate('=', myData);
+
+  expect(newData.total !== '10').toBeFalsy();
+  expect(newData.total === '10').toBeTruthy();
+  expect(newData.total).toBe('10');
+  
+  expect(newData.next !== null).toBeFalsy();
+  expect(newData.next === null).toBeTruthy();
+  expect(newData.next).toBe(null);
+});
+
+test('test with button . when total and next has some value', ()=> {
+  myData.next = '2';
+  myData.operation = null;
+  myData.total = '20';
+
+  const newData = calculate('.', myData);
+
+  expect(newData.next !== '2.').toBeFalsy();
+  expect(newData.next === '2.').toBeTruthy();
+  expect(newData.next).toBe('2.');
+});
+
+test('test with button . when total has value and next is null', ()=> {
+  myData.next = null;
+  myData.operation = null;
+  myData.total = '20';
+
+  const newData = calculate('.', myData);
+
+  expect(newData.next !== '0.').toBeFalsy();
+  expect(newData.next === '0.').toBeTruthy();
+  expect(newData.next).toBe('0.');
+});
+
+test('test with button . when total has null and next has a value', ()=> {
+  myData.next = '20';
+  myData.operation = null;
+  myData.total = null;
+
+  const newData = calculate('.', myData);
+
+  expect(newData.next !== '20.').toBeFalsy();
+  expect(newData.next === '20.').toBeTruthy();
+  expect(newData.next).toBe('20.');
+});
