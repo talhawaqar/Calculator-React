@@ -111,7 +111,7 @@ test('add two numbers and mutate the object accordingly', () => {
   expect(newData.total !== '10').toBeFalsy();
   expect(newData.total === '10').toBeTruthy();
   expect(newData.total).toBe('10');
-  
+
   expect(newData.next !== null).toBeFalsy();
   expect(newData.next === null).toBeTruthy();
   expect(newData.next).toBe(null);
@@ -127,7 +127,7 @@ test('subtract two numbers and mutate the object accordingly', () => {
   expect(newData.total !== '10').toBeFalsy();
   expect(newData.total === '10').toBeTruthy();
   expect(newData.total).toBe('10');
-  
+
   expect(newData.next !== null).toBeFalsy();
   expect(newData.next === null).toBeTruthy();
   expect(newData.next).toBe(null);
@@ -143,7 +143,7 @@ test('Multiply two numbers and mutate the object accordingly', () => {
   expect(newData.total !== '10').toBeFalsy();
   expect(newData.total === '10').toBeTruthy();
   expect(newData.total).toBe('10');
-  
+
   expect(newData.next !== null).toBeFalsy();
   expect(newData.next === null).toBeTruthy();
   expect(newData.next).toBe(null);
@@ -159,13 +159,13 @@ test('Divide two numbers and mutate the object accordingly', () => {
   expect(newData.total !== '10').toBeFalsy();
   expect(newData.total === '10').toBeTruthy();
   expect(newData.total).toBe('10');
-  
+
   expect(newData.next !== null).toBeFalsy();
   expect(newData.next === null).toBeTruthy();
   expect(newData.next).toBe(null);
 });
 
-test('test with button . when total and next has some value', ()=> {
+test('test with button . when total and next has some value', () => {
   myData.next = '2';
   myData.operation = null;
   myData.total = '20';
@@ -177,7 +177,7 @@ test('test with button . when total and next has some value', ()=> {
   expect(newData.next).toBe('2.');
 });
 
-test('test with button . when total has value and next is null', ()=> {
+test('test with button . when total has value and next is null', () => {
   myData.next = null;
   myData.operation = null;
   myData.total = '20';
@@ -189,7 +189,7 @@ test('test with button . when total has value and next is null', ()=> {
   expect(newData.next).toBe('0.');
 });
 
-test('test with button . when total has null and next has a value', ()=> {
+test('test with button . when total has null and next has a value', () => {
   myData.next = '20';
   myData.operation = null;
   myData.total = null;
